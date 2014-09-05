@@ -5,41 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F36AE549-B873-46D2-84DB-59BAE0295F20</string>
+	<string>FD8713AF-9DC0-4B25-9094-F9328FD16A35</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LAD-DFP</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>10584798-4FE8-4FAB-904C-0D95B519AD4A</key>
-		<string>svn+ssh://svn03.in.ladtech.fr/svn/mobilesla/trunk/iOS/LAD-DFP</string>
+		<key>91033EEA-217F-4757-8186-00A74C9364F0</key>
+		<string>https://github.com/LagardereDigitalFrance-Mobile/LAD-DFP-Wrapper.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LAD-DFP/LAD-DFP.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>10584798-4FE8-4FAB-904C-0D95B519AD4A</key>
-		<string>../..</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>10584798-4FE8-4FAB-904C-0D95B519AD4A</key>
-		<string>svn+ssh://svn03.in.ladtech.fr/svn/mobilesla</string>
+		<key>91033EEA-217F-4757-8186-00A74C9364F0</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>svn+ssh://svn03.in.ladtech.fr/svn/mobilesla/trunk/iOS/LAD-DFP/LAD-DFP.xcodeproj</string>
+	<string>https://github.com/LagardereDigitalFrance-Mobile/LAD-DFP-Wrapper.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>10584798-4FE8-4FAB-904C-0D95B519AD4A</string>
+	<string>91033EEA-217F-4757-8186-00A74C9364F0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>10584798-4FE8-4FAB-904C-0D95B519AD4A</string>
+			<string>91033EEA-217F-4757-8186-00A74C9364F0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>LAD-DFP</string>
+			<string>LAD-DFP-Wrapper</string>
 		</dict>
 	</array>
 </dict>

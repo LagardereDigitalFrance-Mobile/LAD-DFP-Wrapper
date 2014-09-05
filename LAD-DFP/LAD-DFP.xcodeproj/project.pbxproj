@@ -106,8 +106,8 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>C9A60CB819B9E60D00398FEC</string>
 				<string>C91DE07218D232BC00A28AC6</string>
-				<string>C98847931961DDB900045F09</string>
 				<string>7FF09E1F17B9159F0042EB92</string>
 				<string>D9CC610616AEC68800E33E0B</string>
 				<string>37AD259F1680D8E000B6BD48</string>
@@ -137,20 +137,27 @@
 				<string>37AD25C41680D8E000B6BD48</string>
 				<string>37AD25C71680D8E000B6BD48</string>
 				<string>37AD25EC1681B76600B6BD48</string>
-				<string>C98847941961DDB900045F09</string>
+				<string>C9A60CC519B9E91800398FEC</string>
 				<string>37AD25EE1681B76B00B6BD48</string>
 				<string>37AD25F01681B77200B6BD48</string>
 				<string>37AD25F21681B77900B6BD48</string>
 				<string>37AD25F41681B79500B6BD48</string>
+				<string>C9A60CC919B9E91800398FEC</string>
 				<string>37AD25F61681B79C00B6BD48</string>
 				<string>37AD25F81681B7A300B6BD48</string>
 				<string>37AD25FA1681B90300B6BD48</string>
+				<string>C9A60CC819B9E91800398FEC</string>
+				<string>C9A60CC719B9E91800398FEC</string>
+				<string>C9A60CBD19B9E88000398FEC</string>
+				<string>C9A60CBC19B9E88000398FEC</string>
+				<string>C9A60CC419B9E91800398FEC</string>
 				<string>37AD25FC1681B90900B6BD48</string>
 				<string>37AD25FE1681B90E00B6BD48</string>
 				<string>37AD26001681B91200B6BD48</string>
 				<string>37AD26231681D9FD00B6BD48</string>
 				<string>37AD263E1682364B00B6BD48</string>
 				<string>37AD264A168378EE00B6BD48</string>
+				<string>C9A60CC619B9E91800398FEC</string>
 				<string>37AD26501683798C00B6BD48</string>
 				<string>C97477E2197945D000B4C4B6</string>
 				<string>37F3F0A31684B69E00000D42</string>
@@ -158,6 +165,7 @@
 				<string>37F3F0A91684B76C00000D42</string>
 				<string>37F3F0AA1684B76C00000D42</string>
 				<string>37F3F0B5168B2BB500000D42</string>
+				<string>C9A60CB919B9E60D00398FEC</string>
 				<string>37B0D7AB16958342008C5842</string>
 			</array>
 			<key>isa</key>
@@ -1138,6 +1146,14 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>C9A60CBE19B9E91800398FEC</string>
+				<string>C9A60CBF19B9E91800398FEC</string>
+				<string>C9A60CC019B9E91800398FEC</string>
+				<string>C9A60CC119B9E91800398FEC</string>
+				<string>C9A60CC219B9E91800398FEC</string>
+				<string>C9A60CC319B9E91800398FEC</string>
+				<string>C9A60CBA19B9E88000398FEC</string>
+				<string>C9A60CBB19B9E88000398FEC</string>
 				<string>C97477E1197945D000B4C4B6</string>
 				<string>37AD25F11681B77900B6BD48</string>
 				<string>37AD25EF1681B77200B6BD48</string>
@@ -1174,7 +1190,8 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>C97477DF19790C5400B4C4B6</string>
+				<string>C9A60C9619B9E60D00398FEC</string>
+				<string>37AD268F1684934400B6BD48</string>
 				<string>C97477E01979106E00B4C4B6</string>
 			</array>
 			<key>isa</key>
@@ -1931,21 +1948,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7F2DEC9517A7B68A00DCD28A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C98847711961DDB900045F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleDFP_SDKs</string>
-			<key>path</key>
-			<string>LAD-DFP/GoogleDFP_SDKs</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
 		<key>7FF09E1E17B9159F0042EB92</key>
 		<dict>
 			<key>isa</key>
@@ -2033,20 +2035,6 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C97477DF19790C5400B4C4B6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7F2DEC9517A7B68A00DCD28A</string>
-				<string>37AD268F1684934400B6BD48</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>LAD-DFP_Wrapper</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>C97477E01979106E00B4C4B6</key>
 		<dict>
 			<key>children</key>
@@ -2083,40 +2071,42 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C98847711961DDB900045F09</key>
+		<key>C9A60C9619B9E60D00398FEC</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>C98847721961DDB900045F09</string>
-				<string>C98847851961DDB900045F09</string>
-				<string>C98847861961DDB900045F09</string>
-				<string>C98847871961DDB900045F09</string>
-				<string>C98847881961DDB900045F09</string>
-				<string>C98847891961DDB900045F09</string>
-				<string>C988478A1961DDB900045F09</string>
-				<string>C988478B1961DDB900045F09</string>
-				<string>C988478C1961DDB900045F09</string>
-				<string>C988478D1961DDB900045F09</string>
-				<string>C988478E1961DDB900045F09</string>
-				<string>C988478F1961DDB900045F09</string>
-				<string>C98847901961DDB900045F09</string>
-				<string>C98847911961DDB900045F09</string>
-				<string>C98847921961DDB900045F09</string>
+				<string>C9A60C9719B9E60D00398FEC</string>
+				<string>C9A60CAA19B9E60D00398FEC</string>
+				<string>C9A60CAB19B9E60D00398FEC</string>
+				<string>C9A60CAC19B9E60D00398FEC</string>
+				<string>C9A60CAD19B9E60D00398FEC</string>
+				<string>C9A60CAE19B9E60D00398FEC</string>
+				<string>C9A60CAF19B9E60D00398FEC</string>
+				<string>C9A60CB019B9E60D00398FEC</string>
+				<string>C9A60CB119B9E60D00398FEC</string>
+				<string>C9A60CB219B9E60D00398FEC</string>
+				<string>C9A60CB319B9E60D00398FEC</string>
+				<string>C9A60CB419B9E60D00398FEC</string>
+				<string>C9A60CB519B9E60D00398FEC</string>
+				<string>C9A60CB619B9E60D00398FEC</string>
+				<string>C9A60CB719B9E60D00398FEC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>path</key>
+			<key>name</key>
 			<string>GoogleMobileAdsSdkiOS-6.9.3</string>
+			<key>path</key>
+			<string>GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.9.3</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847721961DDB900045F09</key>
+		<key>C9A60C9719B9E60D00398FEC</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>C98847731961DDB900045F09</string>
-				<string>C988477B1961DDB900045F09</string>
-				<string>C98847821961DDB900045F09</string>
+				<string>C9A60C9819B9E60D00398FEC</string>
+				<string>C9A60CA019B9E60D00398FEC</string>
+				<string>C9A60CA719B9E60D00398FEC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2125,17 +2115,17 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847731961DDB900045F09</key>
+		<key>C9A60C9819B9E60D00398FEC</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>C98847741961DDB900045F09</string>
-				<string>C98847751961DDB900045F09</string>
-				<string>C98847761961DDB900045F09</string>
-				<string>C98847771961DDB900045F09</string>
-				<string>C98847781961DDB900045F09</string>
-				<string>C98847791961DDB900045F09</string>
-				<string>C988477A1961DDB900045F09</string>
+				<string>C9A60C9919B9E60D00398FEC</string>
+				<string>C9A60C9A19B9E60D00398FEC</string>
+				<string>C9A60C9B19B9E60D00398FEC</string>
+				<string>C9A60C9C19B9E60D00398FEC</string>
+				<string>C9A60C9D19B9E60D00398FEC</string>
+				<string>C9A60C9E19B9E60D00398FEC</string>
+				<string>C9A60C9F19B9E60D00398FEC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2144,7 +2134,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847741961DDB900045F09</key>
+		<key>C9A60C9919B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2157,7 +2147,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847751961DDB900045F09</key>
+		<key>C9A60C9A19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2170,7 +2160,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847761961DDB900045F09</key>
+		<key>C9A60C9B19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2183,7 +2173,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847771961DDB900045F09</key>
+		<key>C9A60C9C19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2196,7 +2186,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847781961DDB900045F09</key>
+		<key>C9A60C9D19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2209,7 +2199,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847791961DDB900045F09</key>
+		<key>C9A60C9E19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2222,7 +2212,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988477A1961DDB900045F09</key>
+		<key>C9A60C9F19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2235,16 +2225,16 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988477B1961DDB900045F09</key>
+		<key>C9A60CA019B9E60D00398FEC</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>C988477C1961DDB900045F09</string>
-				<string>C988477D1961DDB900045F09</string>
-				<string>C988477E1961DDB900045F09</string>
-				<string>C988477F1961DDB900045F09</string>
-				<string>C98847801961DDB900045F09</string>
-				<string>C98847811961DDB900045F09</string>
+				<string>C9A60CA119B9E60D00398FEC</string>
+				<string>C9A60CA219B9E60D00398FEC</string>
+				<string>C9A60CA319B9E60D00398FEC</string>
+				<string>C9A60CA419B9E60D00398FEC</string>
+				<string>C9A60CA519B9E60D00398FEC</string>
+				<string>C9A60CA619B9E60D00398FEC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2253,7 +2243,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988477C1961DDB900045F09</key>
+		<key>C9A60CA119B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2266,7 +2256,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988477D1961DDB900045F09</key>
+		<key>C9A60CA219B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2279,7 +2269,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988477E1961DDB900045F09</key>
+		<key>C9A60CA319B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2292,7 +2282,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988477F1961DDB900045F09</key>
+		<key>C9A60CA419B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2305,7 +2295,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847801961DDB900045F09</key>
+		<key>C9A60CA519B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2318,7 +2308,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847811961DDB900045F09</key>
+		<key>C9A60CA619B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2331,12 +2321,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847821961DDB900045F09</key>
+		<key>C9A60CA719B9E60D00398FEC</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>C98847831961DDB900045F09</string>
-				<string>C98847841961DDB900045F09</string>
+				<string>C9A60CA819B9E60D00398FEC</string>
+				<string>C9A60CA919B9E60D00398FEC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -2345,7 +2335,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847831961DDB900045F09</key>
+		<key>C9A60CA819B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2358,7 +2348,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847841961DDB900045F09</key>
+		<key>C9A60CA919B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2371,7 +2361,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847851961DDB900045F09</key>
+		<key>C9A60CAA19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2384,7 +2374,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847861961DDB900045F09</key>
+		<key>C9A60CAB19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2397,7 +2387,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847871961DDB900045F09</key>
+		<key>C9A60CAC19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2410,7 +2400,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847881961DDB900045F09</key>
+		<key>C9A60CAD19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2423,7 +2413,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847891961DDB900045F09</key>
+		<key>C9A60CAE19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2436,7 +2426,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988478A1961DDB900045F09</key>
+		<key>C9A60CAF19B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2449,7 +2439,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988478B1961DDB900045F09</key>
+		<key>C9A60CB019B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2462,7 +2452,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988478C1961DDB900045F09</key>
+		<key>C9A60CB119B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2475,7 +2465,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988478D1961DDB900045F09</key>
+		<key>C9A60CB219B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2488,7 +2478,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988478E1961DDB900045F09</key>
+		<key>C9A60CB319B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2501,7 +2491,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C988478F1961DDB900045F09</key>
+		<key>C9A60CB419B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2514,7 +2504,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847901961DDB900045F09</key>
+		<key>C9A60CB519B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2527,7 +2517,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847911961DDB900045F09</key>
+		<key>C9A60CB619B9E60D00398FEC</key>
 		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
@@ -2538,7 +2528,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847921961DDB900045F09</key>
+		<key>C9A60CB719B9E60D00398FEC</key>
 		<dict>
 			<key>fileEncoding</key>
 			<string>4</string>
@@ -2551,17 +2541,161 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C98847931961DDB900045F09</key>
+		<key>C9A60CB819B9E60D00398FEC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C98847911961DDB900045F09</string>
+			<string>C9A60CB619B9E60D00398FEC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>C98847941961DDB900045F09</key>
+		<key>C9A60CB919B9E60D00398FEC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C98847921961DDB900045F09</string>
+			<string>C9A60CB719B9E60D00398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CBA19B9E88000398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-76.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CBB19B9E88000398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-152.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CBC19B9E88000398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CBA19B9E88000398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CBD19B9E88000398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CBB19B9E88000398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CBE19B9E91800398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-40.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CBF19B9E91800398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-100.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CC019B9E91800398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-50.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CC119B9E91800398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-80.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CC219B9E91800398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-58.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CC319B9E91800398FEC</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Icon-29.png</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>C9A60CC419B9E91800398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CBE19B9E91800398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CC519B9E91800398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CBF19B9E91800398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CC619B9E91800398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CC019B9E91800398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CC719B9E91800398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CC119B9E91800398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CC819B9E91800398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CC219B9E91800398FEC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C9A60CC919B9E91800398FEC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9A60CC319B9E91800398FEC</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
