@@ -10,29 +10,29 @@
 	<string>LAD-DFP</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>91033EEA-217F-4757-8186-00A74C9364F0</key>
+		<key>489292441CE871BF9E71CF7B0856C42470E1838B</key>
 		<string>https://github.com/LagardereDigitalFrance-Mobile/LAD-DFP-Wrapper.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LAD-DFP/LAD-DFP.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>91033EEA-217F-4757-8186-00A74C9364F0</key>
+		<key>489292441CE871BF9E71CF7B0856C42470E1838B</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/LagardereDigitalFrance-Mobile/LAD-DFP-Wrapper.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>91033EEA-217F-4757-8186-00A74C9364F0</string>
+	<string>489292441CE871BF9E71CF7B0856C42470E1838B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>91033EEA-217F-4757-8186-00A74C9364F0</string>
+			<string>489292441CE871BF9E71CF7B0856C42470E1838B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LAD-DFP-Wrapper</string>
 		</dict>

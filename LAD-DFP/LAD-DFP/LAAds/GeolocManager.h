@@ -14,5 +14,4 @@
 + (GeolocManager *)sharedInstance;
 - (CLLocation *)getLastLocation;
 
-
 @end

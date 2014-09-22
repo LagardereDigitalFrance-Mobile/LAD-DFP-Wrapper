@@ -80,11 +80,15 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [super viewDidAppear:animated];
+    
     [self loadTagData];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
+    [super viewDidDisappear:animated];
+    
     [[self.navigationItem rightBarButtonItem] setEnabled:FALSE];
     [self editingDone];
 }

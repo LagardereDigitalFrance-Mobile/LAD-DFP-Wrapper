@@ -360,11 +360,17 @@
     
     // Make the request for a test ad. Put in an identifier for the simulator as
     // well as any devices you want to receive test ads.
+    
+#if TARGET_IPHONE_SIMULATOR
+    uriRequest.testDevices =
+    [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+#else
     uriRequest.testDevices =
     [NSArray arrayWithObjects:
      // TODO: Add your device/simulator test identifiers here. They are
      // printed to the console when the app is launched.
      nil];
+#endif
     
     return uriRequest;
 }

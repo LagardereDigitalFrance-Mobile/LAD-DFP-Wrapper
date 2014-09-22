@@ -17,11 +17,11 @@
 
 /// Banner Ad
 
-#define kBannerAdUnitID                         @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
-#define kBannerAdUnitID_Retina                  @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
+//#define kBannerAdUnitID                         @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
+//#define kBannerAdUnitID_Retina                  @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
 
-//#define kBannerAdUnitID                         @"/12271007/app_smartphones_public_android_ios_s136175/article_r136176/f136184_d205_dm3_bas_centre_ban_320x50"
-//#define kBannerAdUnitID_Retina                  @"/12271007/app_smartphones_public_android_ios_s136175/article_r136176/f136184_d205_dm1_bas_centre_ban_640x100"
+#define kBannerAdUnitID                         @"/12271007/dfp_mobiles_tele7jours_s134734/accueil_r135118/f135120_d205_dm3_bas_centre_ban_320x50"
+#define kBannerAdUnitID_Retina                  @"/12271007/dfp_mobiles_tele7jours_s134734/accueil_r135118/f135120_d205_dm3_bas_centre_ban_320x50"
 
 
 /************************ iPad Tags ************************/
