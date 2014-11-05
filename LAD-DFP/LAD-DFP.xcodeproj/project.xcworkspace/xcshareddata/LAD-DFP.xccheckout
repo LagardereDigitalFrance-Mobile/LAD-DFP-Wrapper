@@ -14,7 +14,7 @@
 		<string>https://github.com/LagardereDigitalFrance-Mobile/LAD-DFP-Wrapper.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LAD-DFP/LAD-DFP.xcodeproj/project.xcworkspace</string>
+	<string>LAD-DFP/LAD-DFP.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>489292441CE871BF9E71CF7B0856C42470E1838B</key>
