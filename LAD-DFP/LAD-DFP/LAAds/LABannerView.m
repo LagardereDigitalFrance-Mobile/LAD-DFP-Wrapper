@@ -38,7 +38,10 @@
 
 //----------------------------------------------
 
-@interface LABannerView () 
+@interface LABannerView ()
+{
+    NSDictionary    *adParams;
+}
 
 @property (nonatomic) BOOL enableLocation;
 
@@ -60,11 +63,77 @@
 @synthesize delegate;
 @synthesize request;
 
+//----------------------------------------------------------------
+// ----------------------- PRIVATE METHODS -----------------------
+//----------------------------------------------------------------
+
+#pragma  mark - Ad display configuration Methods (Private)
+
+- (void)prepareBannerAdDisplay
+{
+    if (adParams == nil)
+    {
+        return;
+    }
+    
+    UIView *aView = [adParams objectForKey:@"targetView"];
+    CLLocation *provideLocation = [adParams objectForKey:@"provideLocation"];
+    
+    if (aView != nil && containerViewController != nil && self.delegate != nil)
+    {
+        [self configureBannerForView:aView];
+        
+        if (adBanner_ != nil )
+        {
+            //DLog(@" => Ask ad display withTagID : %@ \n and withAdditionalParameters : %@",adBanner_.adUnitID, request.additionalParameters);
+            
+            // Configure GPS Coord if provide or location enable
+            if(provideLocation != nil)
+            {
+                [request setLocationWithLatitude:provideLocation.coordinate.latitude longitude:provideLocation.coordinate.longitude accuracy:100];
+            }
+            else if(_enableLocation)
+            {
+                CLLocation * location = [[GeolocManager sharedInstance] getLastLocation];
+                [request setLocationWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude accuracy:100];
+            }
+            
+            // Content URL Passing Configuration
+            if (self.adTagsID.webContentUrlRef != nil && self.adTagsID.webContentUrlRef.length > 0)
+            {
+                self.request.contentURL = self.adTagsID.webContentUrlRef;
+            }
+            
+            // For "Place Media" integration add user ID in keyword
+            if (NSClassFromString(@"ASIdentifierManager"))
+            {
+                if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled] == TRUE)
+                {
+                    [self.request addKeyword:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
+                }
+            }
+            
+            [adBanner_ loadRequest:request];
+        }
+    }
+}
+
+//----------------------------------------------------------------
+// ----------------------- PUBLIC METHODS ------------------------
+//----------------------------------------------------------------
+
 #pragma mark - Memory Methods
 
 - (void)dealloc
 {
 #pragma mark  DFP Step 3
+    
+    [self cancelAdDisplayRequest];
+    
+    if (adParams != nil)
+    {
+        [adParams release]; adParams = nil;
+    }
     
     if (adBanner_ != nil)
     {
@@ -183,69 +252,26 @@
 
 - (void)displayBannerAdOnView:(UIView*)aView
 {
-    [self configureBannerForView:aView];
-    
-    if (adBanner_ != nil)
+    if (aView == nil) // bad case params can't be nil
     {
-        //DLog(@" => Ask ad display withTagID : %@ \n and withAdditionalParameters : %@",adBanner_.adUnitID, request.additionalParameters);
-        
-        // adBanner_ a generic request to load it with an ad.
-        if(_enableLocation)
-        {
-            CLLocation * location = [[GeolocManager sharedInstance] getLastLocation];
-            [request setLocationWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude accuracy:100];
-        }
-        
-        // Content URL Passing Configuration
-        if (self.adTagsID.webContentUrlRef != nil && self.adTagsID.webContentUrlRef.length > 0)
-        {
-            self.request.contentURL = self.adTagsID.webContentUrlRef;
-        }
-        
-        // For "Place Media" integration add user ID in keyword
-        if (NSClassFromString(@"ASIdentifierManager"))
-        {
-            if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled] == TRUE)
-            {
-                [self.request addKeyword:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
-            }
-        }
-        
-        [adBanner_ loadRequest:request];
+        return;
     }
+    
+    NSDictionary *adParameters = [[NSDictionary alloc] initWithObjectsAndKeys:aView,@"targetView", nil];
+    adParams = adParameters;
+    [self performSelector:@selector(prepareBannerAdDisplay) withObject:nil afterDelay:0.3];
 }
 
 - (void)displayBannerAdOnView:(UIView*)aView withLocation:(CLLocation *)location
 {
-    [self configureBannerForView:aView];
-    
-    if (adBanner_ != nil)
+    if (aView == nil || location == nil) // bad case params can't be nil
     {
-        //DLog(@" => Ask ad display withTagID : %@ \n and withAdditionalParameters : %@",adBanner_.adUnitID, request.additionalParameters);
-        
-        // adBanner_ a generic request to load it with an ad.
-        if(location)
-        {
-            [request setLocationWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude accuracy:100];
-        }
-        
-        // Content URL Passing Configuration
-        if (self.adTagsID.webContentUrlRef != nil && self.adTagsID.webContentUrlRef.length > 0)
-        {
-            self.request.contentURL = self.adTagsID.webContentUrlRef;
-        }
-        
-        // For "Place Media" integration add user ID in keyword
-        if (NSClassFromString(@"ASIdentifierManager"))
-        {
-            if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled] == TRUE)
-            {
-                [self.request addKeyword:[[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString]];
-            }
-        }
-        
-        [adBanner_ loadRequest:request];
+        return;
     }
+    
+    NSDictionary *adParameters = [[NSDictionary alloc] initWithObjectsAndKeys:aView,@"targetView",location,@"provideLocation", nil];
+    adParams = adParameters;
+    [self performSelector:@selector(prepareBannerAdDisplay) withObject:nil afterDelay:0.3];
 }
 
 - (void)configureBannerForView:(UIView *)aView
@@ -349,6 +375,11 @@
     }
 }
 
+- (void)cancelAdDisplayRequest
+{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(prepareBannerAdDisplay) object:nil];
+}
+
 #pragma mark - GADRequest generation
 
 // Here we're creating a simple GADRequest and whitelisting the application
@@ -360,11 +391,17 @@
     
     // Make the request for a test ad. Put in an identifier for the simulator as
     // well as any devices you want to receive test ads.
+    
+#if TARGET_IPHONE_SIMULATOR
+    uriRequest.testDevices =
+    [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+#else
     uriRequest.testDevices =
     [NSArray arrayWithObjects:
      // TODO: Add your device/simulator test identifiers here. They are
      // printed to the console when the app is launched.
      nil];
+#endif
     
     return uriRequest;
 }

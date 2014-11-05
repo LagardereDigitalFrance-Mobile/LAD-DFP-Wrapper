@@ -9,7 +9,7 @@ This wrapper allow to automate classic Banner and Interstitial Integration insid
 
 You can also use it for request and display specific advertisement format (DFP account needed).
 
-> Compatible with Google Mobile Ads Sdk iOS-6.9.3
+> Compatible with Google Mobile Ads Sdk iOS-6.12.0
 
 
 Feature : 

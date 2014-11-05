@@ -10,18 +10,25 @@
 
 // TEST TAG
 
-/// Interstitial Ad
+/// --- Interstitial Ad ---
+
 #define kInterstitialAdUnitID                   @"/12271007/test_digital_dfp_s116207/lacill_int_ouv_iphone_r136327/f136346_d206_dm36_milieu_centre_interstitiel_android_320x480"
 #define kInterstitialAdUnitID_Retina            @"/12271007/test_digital_dfp_s116207/lacill_int_ouv_iphone_r136327/f136346_d206_dm5_milieu_centre_interstitiel_iphone4_640x920"
 #define kInterstitialAdUnitID_iPhone5           @"/12271007/test_digital_dfp_s116207/lacill_int_ouv_iphone_r136327/f136346_d206_dm35_milieu_centre_inter_tele7_ios_5_640x1136"
 
-/// Banner Ad
+// Google Sample Ad Unit
 
-#define kBannerAdUnitID                         @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
-#define kBannerAdUnitID_Retina                  @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
+//#define kInterstitialAdUnitID                   @"/6253334/dfp_example_ad/interstitial"
+//#define kInterstitialAdUnitID_Retina            @"/6253334/dfp_example_ad/interstitial"
+//#define kInterstitialAdUnitID_iPhone5           @"/6253334/dfp_example_ad/interstitial"
 
-//#define kBannerAdUnitID                         @"/12271007/app_smartphones_public_android_ios_s136175/article_r136176/f136184_d205_dm3_bas_centre_ban_320x50"
-//#define kBannerAdUnitID_Retina                  @"/12271007/app_smartphones_public_android_ios_s136175/article_r136176/f136184_d205_dm1_bas_centre_ban_640x100"
+/// --- Banner Ad ---
+
+//#define kBannerAdUnitID                         @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
+//#define kBannerAdUnitID_Retina                  @"/12271007/test_digital_dfp_s116207/lacill_banner_iphone_r136326/f136339_d205_dm3_bas_centre_ban_320x50"
+
+#define kBannerAdUnitID                         @"/12271007/dfp_mobiles_tele7jours_s134734/accueil_r135118/f135120_d205_dm3_bas_centre_ban_320x50"
+#define kBannerAdUnitID_Retina                  @"/12271007/dfp_mobiles_tele7jours_s134734/accueil_r135118/f135120_d205_dm3_bas_centre_ban_320x50"
 
 
 /************************ iPad Tags ************************/

@@ -60,7 +60,7 @@
     
     // Override point for customization after application launch.
     
-    [self checkIftagInit];
+    [self checkIfTagInit];
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
     {
@@ -200,7 +200,7 @@
 
 #pragma mark - Data Management
 
-- (void)checkIftagInit
+- (void)checkIfTagInit
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) // iPhone case
     {

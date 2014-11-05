@@ -72,7 +72,11 @@
 /// Ask to display banner on area aView;
 - (void)displayBannerAdOnView:(UIView*)aView;
 
+/// Ask to display banner on area aView and a specific GPS location
 - (void)displayBannerAdOnView:(UIView*)aView withLocation:(CLLocation *)location;
+
+// cancel any delay ad display request
+- (void)cancelAdDisplayRequest;
 
 /// Make ad request on DFP platform
 - (GADRequest *)createRequest;
