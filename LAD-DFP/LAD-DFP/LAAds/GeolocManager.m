@@ -8,17 +8,18 @@
 
 #import "GeolocManager.h"
 
-// définition du nombre de secondes pour la prochaine mise à jour de la position de l'utilisateur
-#define kTimeGeoloc 60
+//définition du nombre de secondes pour la prochaine mise à jour de la position de l'utilisateur
+#define kTimeGeoloc (60)
 
 @interface GeolocManager () <CLLocationManagerDelegate>
-
 //private instances
 @property (retain,nonatomic) CLLocationManager * locationManager;
+
 
 @end
 
 @implementation GeolocManager
+
 
 /********************************************************************************/
 #pragma mark - Singleton
@@ -27,20 +28,15 @@
 {
     static GeolocManager * sharedInstance = nil;
     static dispatch_once_t onceToken = 0;
-    
     dispatch_once(&onceToken, ^{
         
         sharedInstance = [[GeolocManager alloc] init];
-        
     });
-    
     return sharedInstance;
 }
 
-/********************************************************************************/
-#pragma mark - Initialization Methods
 
-- (id)init
+-(id)init
 {
     self = [super init];
     
@@ -50,40 +46,69 @@
         self.locationManager = locationManagerTmp;
         [locationManagerTmp release];
         _locationManager.delegate = self;
+        
+#ifdef DEBUG
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+#else
+        _locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+#endif
+        
     }
     
     return self;
 }
 
+
+
 /********************************************************************************/
 #pragma mark - CLLocationManager Delegate
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     [_locationManager stopUpdatingLocation];
 }
 
-- (void)locationManager:(CLLocationManager *)manager
-    didUpdateToLocation:(CLLocation *)newLocation
-           fromLocation:(CLLocation *)oldLocation
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
-    [_locationManager stopUpdatingLocation];
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1)
+    {
+        if (status == kCLAuthorizationStatusAuthorizedWhenInUse || status == kCLAuthorizationStatusAuthorizedAlways)
+        {
+            [self.locationManager startUpdatingLocation];
+        }
+    }
 }
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"error %@",error);
+}
+
 
 /********************************************************************************/
 #pragma mark - Public Méthods
 
 - (CLLocation *)getLastLocation
 {
-    //on check si on doit effectuer une mise à jour de la location
-    
     if(!_locationManager.location || ABS([_locationManager.location.timestamp timeIntervalSinceNow])>kTimeGeoloc)
     {
-        [_locationManager startUpdatingLocation];
+        if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1)
+        {
+            if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+                [_locationManager requestWhenInUseAuthorization];
+            }else if([CLLocationManager authorizationStatus] != kCLAuthorizationStatusDenied){
+                [_locationManager startUpdatingLocation];
+            }
+            
+        }else {
+            [_locationManager startUpdatingLocation];
+        }
     }
     
     return _locationManager.location;
+    
 }
+
 
 @end

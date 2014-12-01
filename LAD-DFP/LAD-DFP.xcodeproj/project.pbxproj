@@ -53,7 +53,6 @@
 		37F3F0B5168B2BB500000D42 /* ParamsViewController_iPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F3F0B3168B2BB500000D42 /* ParamsViewController_iPadViewController.xib */; };
 		37F3F0BC168B4CD500000D42 /* LAAdTags.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F3F0BB168B4CD500000D42 /* LAAdTags.m */; };
 		7FF09E1F17B9159F0042EB92 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF09E1E17B9159F0042EB92 /* CoreLocation.framework */; };
-		7FF09E2317B92B1C0042EB92 /* GeolocManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF09E2217B92B1C0042EB92 /* GeolocManager.m */; };
 		C91DE07218D232BC00A28AC6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91DE06F18D2326D00A28AC6 /* CoreTelephony.framework */; };
 		C954C45C19D02D1500A41E4F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C954C45B19D02D1500A41E4F /* StoreKit.framework */; };
 		C954C48319D05EAC00A41E4F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C954C48119D05EAC00A41E4F /* EventKit.framework */; };
@@ -70,6 +69,7 @@
 		D9CC610616AEC68800E33E0B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9CC610516AEC68800E33E0B /* QuartzCore.framework */; };
 		E7C3C6E71A1CE41E00FA3CB4 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C3C6E51A1CE41E00FA3CB4 /* libGoogleAdMobAds.a */; };
 		E7C3C6E81A1CE41E00FA3CB4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = E7C3C6E61A1CE41E00FA3CB4 /* README.txt */; };
+		E7CC42D81A2776D900406CF1 /* GeolocManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CC42D71A2776D900406CF1 /* GeolocManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,8 +136,6 @@
 		37F3F0BB168B4CD500000D42 /* LAAdTags.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAAdTags.m; sourceTree = "<group>"; };
 		37F3F0BD168B607F00000D42 /* LADFPAdsHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LADFPAdsHeader.h; sourceTree = "<group>"; };
 		7FF09E1E17B9159F0042EB92 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		7FF09E2117B92B1C0042EB92 /* GeolocManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolocManager.h; sourceTree = "<group>"; };
-		7FF09E2217B92B1C0042EB92 /* GeolocManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolocManager.m; sourceTree = "<group>"; };
 		C91DE06F18D2326D00A28AC6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		C954C45B19D02D1500A41E4F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C954C48119D05EAC00A41E4F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -181,6 +179,8 @@
 		E7C3C6E41A1CE41E00FA3CB4 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
 		E7C3C6E51A1CE41E00FA3CB4 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
 		E7C3C6E61A1CE41E00FA3CB4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		E7CC42D61A2776D200406CF1 /* GeolocManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeolocManager.h; sourceTree = "<group>"; };
+		E7CC42D71A2776D900406CF1 /* GeolocManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolocManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,8 +445,8 @@
 		7FF09E2017B927CC0042EB92 /* GeoLocManager */ = {
 			isa = PBXGroup;
 			children = (
-				7FF09E2117B92B1C0042EB92 /* GeolocManager.h */,
-				7FF09E2217B92B1C0042EB92 /* GeolocManager.m */,
+				E7CC42D61A2776D200406CF1 /* GeolocManager.h */,
+				E7CC42D71A2776D900406CF1 /* GeolocManager.m */,
 			);
 			name = GeoLocManager;
 			sourceTree = "<group>";
@@ -658,8 +658,8 @@
 				37AD26961684937400B6BD48 /* LAInterstitial.m in Sources */,
 				37F3F0A51684B69E00000D42 /* YRDropdownView.m in Sources */,
 				37F3F0B4168B2BB500000D42 /* ParamsViewController_iPadViewController.m in Sources */,
+				E7CC42D81A2776D900406CF1 /* GeolocManager.m in Sources */,
 				37F3F0BC168B4CD500000D42 /* LAAdTags.m in Sources */,
-				7FF09E2317B92B1C0042EB92 /* GeolocManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,8 +776,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/**",
-					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.9.3",
-					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.12.0",
 					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.12.2",
 				);
 				OTHER_CFLAGS = "-DDFPSAMPLE";
@@ -800,8 +798,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/**",
-					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.9.3",
-					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.12.0",
 					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.12.2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -845,8 +841,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/**",
-					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.9.3",
-					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.12.0",
 					"$(PROJECT_DIR)/LAD-DFP/GoogleDFP_SDKs/GoogleMobileAdsSdkiOS-6.12.2",
 				);
 				OTHER_CFLAGS = (

@@ -11,7 +11,7 @@
 
 @interface GeolocManager : NSObject
 
-+ (GeolocManager *)sharedInstance;
++(GeolocManager *)sharedInstance;
 - (CLLocation *)getLastLocation;
 
 @end
